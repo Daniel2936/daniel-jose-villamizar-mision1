@@ -9,35 +9,87 @@
 </head>
 <body class="h-screen">
     <div class="h-[100%]">
-        <div class="bg-indigo-900 h-[7%] flex flex-row">
+        <div class="bg-indigo-900 h-[7%] flex flex-row  fixed top-0 left-0 right-0  ">
             <div class="flex flex-row w-[15%] m-[0.5%] ml-[5%]">
                 <img src="./asset/logo.png"  class="h-[95%] w-[20%] mt-[0.5%] mr-0 rounded-full "  alt="">
-                <p class="text-white text-lg mt-[4%] ml-[5%]"> R&A Web</p>
+                <p  class="text-white text-lg mt-[4%] ml-[5%]"> R&A Web</p>
             </div>
             <div class="flex justify-around  w-[85%] ml-[8%] mr-[5%] mt-[1%] font-semibold text-lg text-pink-500 ">
-                <a href="pagprincipal.html"> <button class="hover:text-white">INICIO</button></a>
-                <a href="acerca.html"> <button class="hover:text-white">ACERCA</button></a>
-                <a href="servicios.html"> <button class="hover:text-white">SERVICIOS</button></a>
-                <a href="acerca.html"> <button class="hover:text-white">PORTAFOLIO</button></a>
-                <a href="acerca.html"> <button class="hover:text-white">TESTIMONIO</button></a>
-                <a href="acerca.html"> <button class="hover:text-white">CONTACTO</button></a>
+                <a href="#principal"> <button class="hover:text-white">INICIO</button></a>
+                <a href="#acerca"> <button class="hover:text-white">ACERCA</button></a>
+                <a href="#servicios"> <button class="hover:text-white">SERVICIOS</button></a>
+                <a href="#portafolio"> <button class="hover:text-white">PORTAFOLIO</button></a>
+                <a href="#principal"> <button class="hover:text-white">TESTIMONIO</button></a>
+                <a href="#principal"> <button class="hover:text-white">CONTACTO</button></a>
             </div>
             
-    
         </div>
-        <div class="h-[94%] bg-cover flex justify-center items-center flex-col " 
+
+
+
+        <div id="principal" class="h-[100%] bg-cover flex justify-center items-center flex-col " 
         style="background-image: url('./asset/background_welcome.jpg');">
         <div class="h-[70%] w-[40%] flex justify-center flex-col items-center">
-            <p class=" text-8xl text-white font-semibold ">BIENVENID@S</p>
+            <p   class=" text-8xl text-white font-semibold ">BIENVENID@S</p>
             <p class=" text-8xl text-white font-semibold ">A MI SITIO </p>
             <button class="rounded-full text-xl text-white  font-semibold bg-pink-500 w-[32%] h-[8%] hover:bg-white hover:text-pink-500 mt-[2%]">CONTACTAME</button>
         </div>
         
     </div>
 
+    <div id="acerca" class="flex flex-row h-[100%] m-[2%] mb-0 text-lg bg-gray-100">
+        <div class="w-[30%] m-[1%] h-[70%]">
+            <p class="text-end font-semibold">Nakufanyia MZAHA</p>
+            <P class="text-sm text-end font-semibold">Web Developer</P>
+            <p class="text-end italic mt-[7%]">Desde 2004 rengo experiencia e el area del desarrollo web y la educaion,imparto clases,conferencias y capacitaciones para personas, empresas, instituciones educativas y comunidades en Internet</p>
+            <p class="text-end italic mt-[7%]">Tambien colavoro en proyectos como freelance FullStack. Estoy mas orientado al Fronted,pero tambien hago Backend.</p>
+            <p class="text-end italic mt-[7%]">Disfrtuo llevar a cabo la maquetacion e interactividad de interfaces web, asi como la optimizacion, para el buen posicionamiento y el rendimiento de carga de sitios y aplicaciones web.</p>
+            <p class="text-end italic mt-[7%]">Tambien cuento con experiencia en el area de SOcial Media.Marketing de Contenidos y SEO</p>
+            <button class="rounded-full text-xl text-white  font-semibold bg-pink-500 w-[52%] h-[8%] hover:bg-white hover:text-pink-500 mt-[7%]">DESCARGAR CV</button>
+        </div>
+        <div class="w-[25%] h-[60%]"><img src="./asset/foto__perfil.jpg" alt=""></div>
+        <div class="w-[35%] m-[1.5%] mt-0">
+            <P class="text-xl font-semibold">Mis habilidades</P>
+            <div class=" text-lg italic flex flex-row justify-between mt-[2%]"> <p>Desarrollo web</p><p>90%</p></div>
+            <div class=" w-[100%] h-[3%] flex flex-row" ><div class="bg-zinc-400 w-[90%]"></div><div class="bg-zinc-800 w-[10%]"></div></div>
+            <div class=" text-lg italic flex flex-row justify-between mt-[2%]"> <p>Diseño Web</p><p>85%</p></div>
+            <div class=" w-[100%] h-[3%] flex flex-row" ><div class="bg-zinc-400 w-[85%]"></div><div class="bg-zinc-800 w-[15%]"></div></div>
+            <div class=" text-lg italic flex flex-row justify-between mt-[2%]"> <p>WPO Y SEO</p><p>80%</p></div>
+            <div class=" w-[100%] h-[3%] flex flex-row" ><div class="bg-zinc-400 w-[80%]"></div><div class="bg-zinc-800 w-[20%]"></div></div>
+            <div class=" text-lg italic flex flex-row justify-between mt-[2%]"> <p>Desarrollo web Y Backend</p><p>75%</p></div>
+            <div class=" w-[100%] h-[3%] flex flex-row" ><div class="bg-zinc-400 w-[75%]"></div><div class="bg-zinc-800 w-[25%]"></div></div>
+            <div class=" text-lg italic flex flex-row justify-between mt-[2%]"> <p>Social Media y Marketing de Contenidos</p><p>60%</p></div>
+            <div class=" w-[100%] h-[3%] flex flex-row" ><div class="bg-zinc-400 w-[60%]"></div><div class="bg-zinc-800 w-[40%]"></div></div>
+
+
+        </div>
+    </div>
+
+    <div id="servicios" class="flex justify-center items-center flex-col  m-[1%] h-[100%] mb-0">
+        <div class="border border-red-500 border-2 border-l-0 border-r-0  w-[15%] h-[5%] flex justify-center text-2xl font-bold"><p>Servicios ofrecidos</p></div>
+        <div class="grid grid-cols-3 gap-3 place-content-center mb-[0%] m-[10%] mt-[4%] h-[60%] w-[90%] text-lg">
+            <div class=" flex-row ml-[30%] m-[20%] mr-[5%]" ><div class="flex justify-center "><img src="./asset/service-code.svg"  alt=""></div><p class="text-center font-bold mb-0">Programacion web</p><p class="text-center italic"> Desarrollo sitios y aplicaciones para plataformar Web. Te ayudo a construir tu proyecto de principio a fin: Fronted,Backend y Base de Datos</p></div>
+            <div class=" flex-row ml-[15%] m-[20%] mr-[15%]" ><div class="flex justify-center "><img src="./asset/service-design.svg" alt=""></div><p class="text-center font-bold mb-0">Diseño Web</p><p class="text-center italic">Prototipo y maqueteo tus diseños estáticos y los convierto en increibles sitios y aplicaciones web responsivas,óptimas y accesibles</p></div>
+            <div class=" flex-row ml-[5%] m-[20%] mr-[30%]" ><div class="flex justify-center "><img src="./asset/service-wpo.svg" alt=""></div><p class="text-center font-bold mb-0">WPO</p><p class="text-center italic"> Web Performance Optimization, hago que tus sitios y aplicaciones web mejoren su tiempo de carga y respuesta</p></div>
+            <div class=" flex-row ml-[30%] m-[20%] mt-[10%] mr-[10%]" ><div class="flex justify-center "><img src="./asset/service-seo.svg" alt=""></div><p class="text-center font-bold mb-0">SEO</p><p class="text-center italic"> Search Engine Optimization,optimizo tus sitios y aplicaciones web para que mejoren su posición en los buscadores orgánicamente.</p></div>
+            <div class=" flex-row ml-[15%] m-[20%] mt-[10%] mr-[15%]" ><div class="flex justify-center "><img src="./asset/service-smo.svg" alt=""></div><p class="text-center font-bold mb-0">SMO</p><p class="text-center italic">Social Media Optimiztion y Marketing de Contenidos, te ayudo a elegir los canales digitales correctos para llegar tu audiencia ideal.</p></div>
+            <div class=" flex-row ml-[5%] m-[20%] mt-[10%] mr-[30%]" ><div class="flex justify-center "><img src="./asset/service-hosting.svg" alt=""></div><p class="text-center font-bold mb-0">Web Hosting</p><p class="text-center italic">¿No cuentas con dominio y hospedaje web para tu proyecto? No te preocupes de esas cosas técnicas me encargo yo</p></div>
+        </div>
+    </div>
+
+    <div id="portafolio" class="flex justify-center items-center flex-col m-[1%] bg-gray-100 ">
+        <div class="border border-red-500 border-2 border-l-0 border-r-0  w-[15%] h-[20%] flex justify-center text-2xl font-bold"><p>PORTAFOLIO</p></div>
+        <div class="grid grid-cols-3 gap-0 place-content-center  mb-[1%] mt-[2%] ml-[25%] mr-[25%] h-[50%] w-[60%] ">
+            <div><img src="./asset/portfolio-1.jpg" alt=""></div>
+            <div><img src="./asset/portfolio-2.jpg" alt=""></div>
+            <div><img src="./asset/portfolio-3.jpg" alt=""></div>
+            <div><img src="./asset/portfolio-4.jpg" alt=""></div>
+            <div><img src="./asset/portfolio-5.jpg" alt=""></div>
+            <div><img src="./asset/portfolio-6.jpg" alt=""></div>
+        </div>
+    </div>
 
     </div>
-    
     
 </body>
 </html>
