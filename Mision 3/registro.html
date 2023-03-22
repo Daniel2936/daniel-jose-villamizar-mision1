@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen">
+    <div class="flex w-[100%]">
+        <div class="w-[20%] bg-red-700 h-screen" ></div>
+        <div class="w-[80%] pt-[4%] flex-col flex justity-center items-center border-4 h-screen">
+            <div class=" flex justify-between items-center w-[100%] pb-[5%] pl-[4%] pr-[4%]">
+                <a class=" p-[1%] " href="usuarios.html"><img src="./Assets/Union.svg" alt=""></a>
+                <p class="text-4xl font-bold pr-[40%]">Registro Personas</p>
+                
+            </div>
+            <div class="w-[100%] flex-col flex justify-center items-center">
+                <form id="formulario">
+                    <div class="flex justify-between pb-[3%] ">
+                        <div class="w-[50%]"><p label for ='nombre' class="text-2xl font-semibold text-black pb-[2%]  ">Nombres </p> <input  id='nombres' class=" w-[80%] border-2 border-fuchsia-600  rounded-lg m-[4%] ml-0 p-[2%] text-xl font-semibold" type="text" required ></div>
+                        <div class="w-[50%]"><p label for ='apellidos' class="text-2xl font-semibold text-black pb-[2%]">Apellidos </p> <input  id='apellidos' class=" w-[100%] border-2 border-fuchsia-600  rounded-lg m-[4%] ml-0 p-[2%] text-xl font-semibold" type="text" required ></div>
+    
+                    </div>
+                    <div class="flex pb-[3%] ">
+                        <div class="w-[33%]"><p label for ='area' class="text-2xl font-semibold text-black pb-[2%]  ">Area </p> <input  id='area' class=" w-[90%] border-2 border-fuchsia-600  rounded-lg m-[4%] ml-0 p-[2%] text-xl font-semibold" type="text" required ></div>
+                        <div class="w-[33%]"><p label for ='usuario' class="text-2xl font-semibold text-black pb-[2%]">Usuario </p> <input  id='usuario' class=" w-[90%] border-2 border-fuchsia-600  rounded-lg m-[4%] ml-0 p-[2%] text-xl font-semibold" type="text" required ></div>
+                        <div class="w-[33%]"><p label for ='edad' class="text-2xl font-semibold text-black pb-[2%]">Edad </p> <input  id='edad' class=" w-[100%] border-2 border-fuchsia-600  rounded-lg m-[4%] ml-0 p-[2%] text-xl font-semibold" type="text" required ></div>
+                    </div>
+                    <div><p label for ='direccion' class="text-2xl font-semibold text-black pb-[2%]">Direccion </p> <input  id='direccion' class=" w-[100%] border-2 border-fuchsia-600 rounded-lg mb-[6%] p-[2%] text-xl font-semibold" type="text" required ></div>
+                    <div><p label for ='email' class="text-2xl font-semibold text-black">Email </p> <input  id='email' class=" w-[100%] border-2 border-fuchsia-600  rounded-lg mb-[6%] p-[2%] text-xl font-semibold" type="text" required ></div>
+                    <div class="flex justify-center items-center w-[100%]"><button class="w-[28%] bg-red-700 p-[2%] text-2xl text-white font-semibold rounded-3xl" type="submit" >ENVIAR</button></div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="./registro.js"></script>
+</html>
