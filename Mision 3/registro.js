@@ -20,7 +20,6 @@ class Usuario{
 }
 
 
-
 const nombres=document.getElementById('nombres')
 const apellidos=document.getElementById('apellidos')
 const area=document.getElementById('area')
@@ -36,12 +35,8 @@ let usuarios=[]
 formulario.addEventListener("submit", form);
 function form(event) {
     event.preventDefault();
-
-
-
     
     const usero=new Usuario(nombres.value,apellidos.value,area.value,usuarioo.value,edad.value,direccion.value,email.value )
-    
     const {usuario}=usero
 
     if(usuarios.includes(usuario)){
@@ -53,6 +48,7 @@ function form(event) {
         listaP.push(usero)
         console.log(listaP)
         localStorage.setItem("Usuarios", JSON.stringify(listaP))
+        localStorage.setItem("RegistroUsers", JSON.stringify(usuarios))
         nombres.value=""
         apellidos.value=""
         area.value=""
@@ -65,6 +61,3 @@ function form(event) {
 
 }
 
-window.onbeforeunload = () => {
-    localStorage.clear();
-  }
