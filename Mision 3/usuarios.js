@@ -33,6 +33,7 @@ usuarios.forEach(element => {
 });
 
 busqueda.addEventListener("keypress",function(event){
+    let cont=0
 
     if (event.key === "Enter") {
 
@@ -53,10 +54,16 @@ busqueda.addEventListener("keypress",function(event){
 
             }else{
 
+                cont++
+
 
             }
             
         });
+
+        if(cont>=1){
+            alert('No existe este usuario')
+        }
 
 
     }

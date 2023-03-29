@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperacion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="h-screen">
+    <div class="  sm:flex">
+        <!-- caja donde van las imagenes -->
+        <div class="  sm:hidden">
+            <img src="./Assets/Rectangle 14.png" class="object-fill w-[100%] h-[250px]" alt="">
+        </div>
+        <div class=" w-[46%] hidden sm:grid sm:grid-cols-3 sm:grid-rows-3 sm:gap-8 sm:bg-zinc-800 sm:pl-[1%] sm:pr-[1%] sm:h-screen ">
+            <img src="./Assets/Img 1.svg" class="object-cover h-[98%]" alt="">
+            <img src="./Assets/Img 2.svg" class="object-cover h-[130%]" alt="">
+            <img src="./Assets/Img 3.svg" class="object-cover h-[95%]" alt="">
+            <img src="./Assets/Img 4.svg" class=" object-cover h-[110%]" alt="">
+            <img src="./Assets/Img 5.svg" class="h-[140%]"alt="">
+            <img src="./Assets/Img 6.svg" class="object-cover h-[95%]" alt="">
+            <img src="./Assets/Img 7.svg" class="h-[100%]" alt="">
+            <img src="./Assets/Img 8.svg" class=" h-[100%]" alt="">
+            <img src="./Assets/Img 9.svg" class="object-cover h-[100%]"alt="">
+        </div>
+        <!-- caja donde va el login -->
+        <div class="flex-col  pt-[4%] p-[10%]">
+            <img src="./Assets/Frame 13.svg" class="w-[40%] mb-[5%]" alt="">
+            <div class="w-[85%] sm:w-[75%] pb-[7%]">
+                <p class="text-2xl">A new way to experience real state in infiniti virtual space</p>
+            </div>
+            <div>
+                <form class="flex-col" id="formulario">
+                    <p class="text-4xl font-medium pb-[5%]">Login</p>
+                    <div class="w-[100%] text-lg font-semibold text-red-600" id="validar">
+                    </div>
+                    <p label for ='email' class="text-xl font-semibold p-[2%] pl-0"  >Email </p> <input  id='email' class="border-blue-800 w-[100%] border-2 rounded-lg p-[1.5%] shadow-xl shadow-blue-300 hover:bg-orange-300 text-xl " type="text" required >
+                    <div class="visible sm:hidden">
+                        <p label for ='contraseña' class=" text-xl font-semibold p-[2%] pt-[4%] pl-0" >Password </p> <input   class=" border-blue-800 w-[100%] border-2 rounded-lg p-[1.5%] shadow-xl shadow-blue-300 hover:bg-orange-300 text-xl" placeholder="*********" type="text">
+                    </div>
+                    <div class="invisible sm:visible">
+                        <p label for ='usuario ' class="sm:text-xl sm:font-semibold sm:p-[2%] sm:pt-[4%] sm:pl-0" >Usuario </p> <input  id='usuario' class=" sm:border-blue-800 sm:w-[100%] sm:border-2 sm:rounded-lg sm:p-[1.5%] sm:shadow-xl sm:shadow-blue-300 sm:hover:bg-orange-300 sm:text-xl" type="text" required >
+                    </div>
+                    <div class="flex justify-between pt-[4%] pb-[4%]">
+                        <div class="flex w-[40%] sm:w-[30%]">
+                            <input type="checkbox" CHECKED>
+                            <p class="text-xl pl-[3%]">Remember me</p>
+                        </div>
+                        <p class="text-xl pl-[3%] underline underline-offset-4">Forgot password?</p>
+                    </div>
+                    <div class="flex justify-between pb-[5%]">
+                        <button type="submit" id='buton' class="w-[45%] p-[2%] bg-gray-600 text-xl text-white rounded-lg">Login</button>
+                        <button class="w-[45%] p-[2%]  text-xl font-semibold rounded-lg border-2 border-black hover:bg-zinc-300">Sign up</button>
+                    </div>
+                    <p class="text-xl text-center">Or, login with</p>
+                    <div class="w-[100%] flex justify-between pt-[2%]">
+                        <button class="w-[30%] p-[1.5%] text-xl  rounded-lg border-2 border-gray-400 hover:bg-zinc-300">Facebook</button>
+                        <button class="w-[30%] p-[1.5%] text-xl  rounded-lg border-2 border-gray-400 hover:bg-zinc-300">Linked in</button>
+                        <button class="w-[30%] p-[1.5%] text-xl  rounded-lg border-2 border-gray-400 hover:bg-zinc-300">Google</button>
+                    </div>
+                </form>
+               
+            </div>
+        </div>
+    </div>  
+</body>
+<script src="./login.js"></script>
+</html>
